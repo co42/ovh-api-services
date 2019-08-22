@@ -1,4 +1,4 @@
-{
+2{
   "name": "ovh-api-services",
   "version": "9.3.0",
   "description": "Contains all angular $resource for OVH API.",

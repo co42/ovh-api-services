@@ -1,4 +1,4 @@
-angular.module('ovh-api-services').service('OvhApiMe', $injector => ({
+angular.module('ovh-api-services').service('OvhApiMe', ($injector, $log) => ({
   v6() {
     return $injector.get('OvhApiMeV6');
   },
@@ -33,6 +33,7 @@ angular.module('ovh-api-services').service('OvhApiMe', $injector => ({
     return $injector.get('OvhApiMePaymentMean');
   },
   PaymentMethod() {
+    $log.warn('PaymentMethod is deprecated and will be deleted at next major release.');
     return $injector.get('OvhApiMePaymentMethod');
   },
   AvailableAutomaticPaymentMeans() {
