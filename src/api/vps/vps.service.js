@@ -14,4 +14,7 @@ angular.module('ovh-api-services').service('OvhApiVps', $injector => ({
   Ips() {
     return $injector.get('OvhApiVpsIps');
   },
+  Tasks() {
+    return $injector.get('OvhApiVpsTasks');
+  },
 }));
