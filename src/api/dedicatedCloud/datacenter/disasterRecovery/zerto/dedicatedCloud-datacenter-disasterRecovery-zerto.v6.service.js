@@ -25,10 +25,9 @@ angular
         {
           // Method is a POST but acts like a GET
           get: {
-            url: `${baseUrl}/state`,
-            method: 'POST',
+            url: `${baseUrl}/status`,
+            method: 'GET',
             cache,
-            hasBody: false,
           },
           disable: {
             url: `${baseUrl}/disable`,
